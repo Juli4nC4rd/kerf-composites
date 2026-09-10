@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kerf-composites.fr/sitemap.xml

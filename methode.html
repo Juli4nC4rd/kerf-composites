@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La méthode du contour appliquée aux composites : Kerf</title>
+<meta name="description" content="Découpe au fil, mesure des deux surfaces, calcul, carte : la méthode du contour en quatre étapes, et ses adaptations aux stratifiés composites. Ce que contient un rapport Kerf.">
+<link rel="canonical" href="https://kerf-composites.fr/methode.html">
+<link rel="alternate" hreflang="fr" href="https://kerf-composites.fr/methode.html">
+<link rel="alternate" hreflang="en" href="https://kerf-composites.fr/en/method.html">
+<link rel="alternate" hreflang="x-default" href="https://kerf-composites.fr/methode.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kerf">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="La méthode du contour appliquée aux composites : Kerf">
+<meta property="og:description" content="Découpe au fil, mesure des deux surfaces, calcul, carte : la méthode du contour en quatre étapes, et ses adaptations aux stratifiés composites. Ce que contient un rapport Kerf.">
+<meta property="og:url" content="https://kerf-composites.fr/methode.html">
+<meta property="og:image" content="https://kerf-composites.fr/assets/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1a1714">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Aller au contenu</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 360 128" role="img" aria-labelledby="h-encre-t"><title id="h-encre-t">Kerf, accueil</title><defs><pattern id="h-encre" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect x="0" y="0" width="3" height="6" fill="#1a1714"/></pattern></defs><rect x="8" y="18" width="44" height="17" fill="#1a1714"/><rect x="8" y="35" width="44" height="17" fill="url(#h-encre)"/><rect x="8" y="52" width="44" height="17" fill="#1a1714"/><rect x="8" y="69" width="44" height="17" fill="url(#h-encre)"/><rect x="8" y="86" width="44" height="17" fill="#1a1714"/><rect x="8" y="103" width="44" height="17" fill="url(#h-encre)"/><rect x="58" y="8" width="44" height="17" fill="#1a1714"/><rect x="58" y="25" width="44" height="17" fill="url(#h-encre)"/><rect x="58" y="42" width="44" height="17" fill="#1a1714"/><rect x="58" y="59" width="44" height="17" fill="url(#h-encre)"/><rect x="58" y="76" width="44" height="17" fill="#1a1714"/><rect x="58" y="93" width="44" height="17" fill="url(#h-encre)"/><rect x="52" y="8" width="6" height="112" fill="#c8923a"/><text x="132" y="86" font-family="Archivo, Helvetica Neue, Arial, sans-serif" font-weight="800" font-size="84" letter-spacing="-0.02em" fill="#1a1714">KERF</text></svg></a>
+    <nav aria-label="Navigation principale">
+    <ul class="site-nav">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="methode.html" aria-current="page">Méthode</a></li>
+      <li><a href="applications.html">Applications</a></li>
+      <li><a href="references.html">Références</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a class="lang" lang="en" hreflang="en" href="en/method.html" title="This page in English">EN</a></li>
+    </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero">
+  <div class="wrap">
+    <span class="label">Méthode</span>
+    <h1>La méthode du contour, pli par pli.</h1>
+    <p class="lede">Une pièce coupée en deux se relâche. La forme que prend la surface de coupe est l'empreinte des contraintes qui y régnaient. La méthode du contour lit cette empreinte et la retraduit en carte de contraintes sur toute la section.</p>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="steps-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">Principe</span>
+      <h2 id="steps-title">Quatre étapes.</h2>
+    </div>
+    <figure class="schema figure">
+<svg viewBox="0 0 800 220" role="img" aria-label="Principe : la pièce coupée en deux se relâche ; la forme des surfaces de coupe est l'empreinte des contraintes.">
+  <rect x="40" y="64" width="260" height="108" fill="none" stroke="#1a1714" stroke-width="2"/>
+  <line x1="40" y1="76" x2="300" y2="76" stroke="#8a8580" stroke-width="1"/><line x1="40" y1="88" x2="300" y2="88" stroke="#8a8580" stroke-width="1"/><line x1="40" y1="100" x2="300" y2="100" stroke="#8a8580" stroke-width="1"/><line x1="40" y1="112" x2="300" y2="112" stroke="#8a8580" stroke-width="1"/><line x1="40" y1="124" x2="300" y2="124" stroke="#8a8580" stroke-width="1"/><line x1="40" y1="136" x2="300" y2="136" stroke="#8a8580" stroke-width="1"/><line x1="40" y1="148" x2="300" y2="148" stroke="#8a8580" stroke-width="1"/>
+  <line x1="170" y1="52" x2="170" y2="184" stroke="#c8923a" stroke-width="4"/>
+  <text x="40" y="40" font-family="JetBrains Mono, Menlo, Consolas, monospace" font-size="12" letter-spacing="1.9" fill="#8a8580">PIÈCE ENTIÈRE</text>
+  <text x="178" y="206" font-family="JetBrains Mono, Menlo, Consolas, monospace" font-size="12" fill="#1a1714">kerf</text>
+  <path d="M400 64 H548 Q538 118 548 172 H400 Z" fill="none" stroke="#1a1714" stroke-width="2"/>
+  <line x1="400" y1="76" x2="538" y2="76" stroke="#8a8580" stroke-width="1"/><line x1="400" y1="88" x2="543" y2="88" stroke="#8a8580" stroke-width="1"/><line x1="400" y1="100" x2="546" y2="100" stroke="#8a8580" stroke-width="1"/><line x1="400" y1="112" x2="548" y2="112" stroke="#8a8580" stroke-width="1"/><line x1="400" y1="124" x2="548" y2="124" stroke="#8a8580" stroke-width="1"/><line x1="400" y1="136" x2="546" y2="136" stroke="#8a8580" stroke-width="1"/><line x1="400" y1="148" x2="543" y2="148" stroke="#8a8580" stroke-width="1"/>
+  <path d="M760 64 H612 Q622 118 612 172 H760 Z" fill="none" stroke="#1a1714" stroke-width="2"/>
+  <line x1="622" y1="76" x2="760" y2="76" stroke="#8a8580" stroke-width="1"/><line x1="617" y1="88" x2="760" y2="88" stroke="#8a8580" stroke-width="1"/><line x1="614" y1="100" x2="760" y2="100" stroke="#8a8580" stroke-width="1"/><line x1="612" y1="112" x2="760" y2="112" stroke="#8a8580" stroke-width="1"/><line x1="612" y1="124" x2="760" y2="124" stroke="#8a8580" stroke-width="1"/><line x1="614" y1="136" x2="760" y2="136" stroke="#8a8580" stroke-width="1"/><line x1="617" y1="148" x2="760" y2="148" stroke="#8a8580" stroke-width="1"/>
+  <text x="400" y="40" font-family="JetBrains Mono, Menlo, Consolas, monospace" font-size="12" letter-spacing="1.9" fill="#8a8580">DEUX MOITIÉS RELÂCHÉES</text>
+  <text x="400" y="206" font-family="JetBrains Mono, Menlo, Consolas, monospace" font-size="12" fill="#1a1714">surface de coupe mesurée</text>
+</svg>
+<figcaption class="caption">Principe : la pièce coupée en deux se relâche ; la forme des surfaces de coupe est l'empreinte des contraintes.</figcaption>
+</figure>
+    <ol class="steps" style="margin-top:40px;">
+      <li>
+        <div>
+          <h3>Découpe au fil</h3>
+          <p>La pièce est coupée en deux par électro-érosion à fil, en une passe droite, sans effort de coupe. Le bridage est symétrique, pour que les deux moitiés se relâchent librement et de la même façon. La largeur de la fente laissée par le fil s'appelle le kerf : c'est le nom de la société.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3>Mesure des deux surfaces</h3>
+          <p>Les deux surfaces de coupe sont mesurées point par point, au palpeur ou par profilométrie optique. La moyenne des deux relevés annule les effets antisymétriques (écart de trajectoire du fil, cisaillement) et ne conserve que le relâchement dû aux contraintes.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3>Calcul</h3>
+          <p>La surface moyenne est lissée, puis imposée en déplacement inversé sur un modèle éléments finis de la demi-pièce. Le calcul restitue la contrainte normale au plan de coupe telle qu'elle existait avant la découpe. Le degré de lissage est choisi par un critère d'erreur, pas à l'œil.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3>Carte</h3>
+          <p>Le résultat est une carte de la contrainte normale sur toute la section, accompagnée de son incertitude. Elle se lit comme un plan : une valeur en chaque point, dans une échelle scientifique, avec les zones d'artefact de coupe délimitées.</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="adapt-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">Composites</span>
+      <h2 id="adapt-title">Ce qui change pour un stratifié.</h2>
+    </div>
+    <div class="grid grid-2">
+      <article class="block">
+        <span class="label">Découpe</span>
+        <h3>Électro-érosion avec feuillards sacrificiels</h3>
+        <p>Les fibres de carbone conduisent assez pour l'électro-érosion à fil, à condition que l'arc s'amorce et se maintienne de façon stable. Des feuillards sacrificiels collés en entrée et en sortie de coupe stabilisent l'arc et protègent les bords. Une découpe sans fissuration ni délaminage a été démontrée sur CFRP <a href="#ref-1">[1]</a>.</p>
+      </article>
+      <article class="block">
+        <span class="label">Modèle</span>
+        <h3>Traitement pli par pli</h3>
+        <p>Un stratifié n'est pas homogène : chaque pli a sa raideur et son orientation. Le modèle de calcul reproduit l'empilement réel, pli par pli, avec les propriétés orthotropes de chacun. La carte finale distingue ce qui se passe d'un pli à l'autre au lieu de moyenner l'épaisseur.</p>
+      </article>
+      <article class="block">
+        <span class="label">Géométrie</span>
+        <h3>Épaisseurs de plis réelles</h3>
+        <p>Les épaisseurs de plis nominales ne sont pas celles de la pièce cuite. Calculer avec les épaisseurs mesurées sur la section, plutôt qu'avec celles de la fiche matière, change les pics de contrainte de 24 à 36 % <a href="#ref-1">[1]</a>. Nous relevons donc l'empilement réel avant de calculer.</p>
+      </article>
+      <article class="block">
+        <span class="label">Montage</span>
+        <h3>Montages sacrificiels pour les sections variables</h3>
+        <p>Une section qui change le long de la coupe (raidisseur, rayon, marche d'épaisseur) déséquilibre le relâchement et crée des artefacts. Un montage sacrificiel, usiné et collé autour de la pièce, rend constante la section vue par le fil. Il est ensuite retiré du calcul.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="report-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">Livrable</span>
+      <h2 id="report-title">Ce que contient un rapport.</h2>
+    </div>
+    <dl class="deflist">
+      <div>
+        <dt>Carte annotée</dt>
+        <dd>La contrainte normale sur la section, dans une échelle scientifique, avec l'empilement superposé et les zones d'intérêt repérées.</dd>
+      </div>
+      <div>
+        <dt>Méthode de correction</dt>
+        <dd>Les corrections appliquées (coupe de référence, masquage des artefacts, lissage retenu) sont décrites avec leurs paramètres, pour que le résultat soit reproductible.</dd>
+      </div>
+      <div>
+        <dt>Incertitude</dt>
+        <dd>Une incertitude par point, issue du bruit de mesure, du choix de lissage et des propriétés matériau. Elle est tracée avec la carte, pas reléguée en annexe.</dd>
+      </div>
+      <div>
+        <dt>Bandes d'artefact</dt>
+        <dd>Les bords de coupe et les zones où le relâchement est perturbé sont délimités. Les valeurs y sont données à titre indicatif et signalées comme telles.</dd>
+      </div>
+    </dl>
+  </div>
+</section>
+
+<section class="section dark" aria-labelledby="valid-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">Validation</span>
+      <h2 id="valid-title">Ce que disent les publications.</h2>
+    </div>
+    <div class="facts">
+      <div class="fact">
+        <span class="value">Vingt ans</span>
+        <p>La méthode du contour est établie depuis vingt ans et a été recoupée par des mesures neutroniques indépendantes lors de comparaisons interlaboratoires.</p>
+      </div>
+      <div class="fact">
+        <span class="value">0,35 à 0,5 mm</span>
+        <p>Résolution spatiale obtenue dans l'épaisseur d'un stratifié <a href="#ref-3">[3]</a>.</p>
+      </div>
+      <div class="fact">
+        <span class="value">−72 MPa</span>
+        <p>Pic simulé par un modèle thermo-élastique sur un stratifié croisé, là où la mesure contour donne −100 à −150 MPa <a href="#ref-2">[2]</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="refs-title">
+  <div class="wrap narrow">
+    <div class="section-head">
+      <span class="label">Références</span>
+      <h2 id="refs-title">Bibliographie.</h2>
+    </div>
+    <ol class="refs">
+      <li id="ref-1">Ahmad B., Zhang X., Guo H., Fitzpatrick M.E., Ayre D. Estimation of residual stress in carbon fibre composite laminate using the contour method. <span class="value">Composite Structures 383 (2026) 120147</span>.</li>
+      <li id="ref-2">Karebasannanavar Ramachandrappa P. et al. (The Open University, CETIM). Communication à ICRS11 (2022) ; <span class="value">Composites Part B: Engineering 299 (2025) 112422</span>.</li>
+      <li id="ref-3">Karebasannanavar Ramachandrappa P. Advancing the Contour Method to Characterise Residual Stress in Polymer Composites. Thèse de doctorat, The Open University, 2024.</li>
+      <li id="ref-4">Prime M.B. Cross-sectional mapping of residual stresses by measuring the surface contour after a cut. <span class="value">Journal of Engineering Materials and Technology, 2001</span>.</li>
+    </ol>
+  </div>
+</section>
+
+</main>
+
+<section class="cta-band dark" aria-labelledby="cta-title">
+  <div class="wrap">
+    <div>
+      <h2 id="cta-title">Un cas concret à discuter ?</h2>
+      <p>Décrivez la pièce, le procédé et la question posée. Nous revenons vers vous avec une proposition de mesure.</p>
+    </div>
+    <a class="btn" href="contact.html">Discuter d'un cas</a>
+  </div>
+</section>
+
+<footer class="site-footer dark">
+  <div class="wrap">
+    <div>
+      <a class="brand" href="index.html"><svg viewBox="0 0 360 128" role="img" aria-labelledby="h-papier-t"><title id="h-papier-t">Kerf, accueil</title><defs><pattern id="h-papier" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect x="0" y="0" width="3" height="6" fill="#f4f1ec"/></pattern></defs><rect x="8" y="18" width="44" height="17" fill="#f4f1ec"/><rect x="8" y="35" width="44" height="17" fill="url(#h-papier)"/><rect x="8" y="52" width="44" height="17" fill="#f4f1ec"/><rect x="8" y="69" width="44" height="17" fill="url(#h-papier)"/><rect x="8" y="86" width="44" height="17" fill="#f4f1ec"/><rect x="8" y="103" width="44" height="17" fill="url(#h-papier)"/><rect x="58" y="8" width="44" height="17" fill="#f4f1ec"/><rect x="58" y="25" width="44" height="17" fill="url(#h-papier)"/><rect x="58" y="42" width="44" height="17" fill="#f4f1ec"/><rect x="58" y="59" width="44" height="17" fill="url(#h-papier)"/><rect x="58" y="76" width="44" height="17" fill="#f4f1ec"/><rect x="58" y="93" width="44" height="17" fill="url(#h-papier)"/><rect x="52" y="8" width="6" height="112" fill="#c8923a"/><text x="132" y="86" font-family="Archivo, Helvetica Neue, Arial, sans-serif" font-weight="800" font-size="84" letter-spacing="-0.02em" fill="#f4f1ec">KERF</text></svg></a>
+      <span class="signature">contraintes résiduelles · composites</span>
+    </div>
+    <nav aria-label="Pied de page">
+      <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="methode.html">Méthode</a></li>
+      <li><a href="applications.html">Applications</a></li>
+      <li><a href="references.html">Références</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <ul class="legal" style="list-style:none;margin:0;padding:0;display:grid;gap:8px;">
+        <li><a href="mentions-legales.html">Mentions légales</a></li>
+        <li><a href="confidentialite.html">Confidentialité</a></li>
+    </ul>
+    <div class="colophon">
+      <span>© 2026 Kerf Composites</span>
+      <span>Site statique, sans cookie ni traceur.</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
