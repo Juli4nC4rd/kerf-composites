@@ -62,5 +62,5 @@ Les points restants sont marqués `[À COMPLÉTER]` ou `[IMAGE À FOURNIR]` dans
 ## Vérifications faites avant livraison
 
 - Mots interdits absents (métaux, métallique, DRX, diffraction, perçage incrémental, hole drilling, slitting, superlatifs) et aucun tiret cadratin.
-- Chiffres : uniquement les valeurs de `contenu-site.md` (section basse de `Site_web_assets/prompt-site-web.md`), plus le capital social, l'adresse du siège et l'année de la référence Prime en bibliographie.
+- Chiffres : uniquement les valeurs de `contenu-site.md` (section basse de `Site_web_assets/prompt-site-web.md`), plus le capital social, le code postal du siège et l'année de la référence Prime en bibliographie.
 - Contrastes : encre sur papier et papier sur encre pour tout le texte ; le laiton n'est utilisé sur papier que pour des éléments non textuels (filets, soulignements, numéros de grande taille).
