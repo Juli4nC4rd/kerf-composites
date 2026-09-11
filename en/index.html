@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,9 +30,10 @@
 
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="../index.html"><svg viewBox="0 0 360 128" role="img" aria-labelledby="h-encre-t"><title id="h-encre-t">Kerf, home</title><defs><pattern id="h-encre" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect x="0" y="0" width="3" height="6" fill="#1a1714"/></pattern></defs><rect x="8" y="18" width="44" height="17" fill="#1a1714"/><rect x="8" y="35" width="44" height="17" fill="url(#h-encre)"/><rect x="8" y="52" width="44" height="17" fill="#1a1714"/><rect x="8" y="69" width="44" height="17" fill="url(#h-encre)"/><rect x="8" y="86" width="44" height="17" fill="#1a1714"/><rect x="8" y="103" width="44" height="17" fill="url(#h-encre)"/><rect x="58" y="8" width="44" height="17" fill="#1a1714"/><rect x="58" y="25" width="44" height="17" fill="url(#h-encre)"/><rect x="58" y="42" width="44" height="17" fill="#1a1714"/><rect x="58" y="59" width="44" height="17" fill="url(#h-encre)"/><rect x="58" y="76" width="44" height="17" fill="#1a1714"/><rect x="58" y="93" width="44" height="17" fill="url(#h-encre)"/><rect x="52" y="8" width="6" height="112" fill="#c8923a"/><text x="132" y="86" font-family="Archivo, Helvetica Neue, Arial, sans-serif" font-weight="800" font-size="84" letter-spacing="-0.02em" fill="#1a1714">KERF</text></svg></a>
+    <a class="brand" href="../index.html"><svg viewBox="0 0 360 128" role="img" aria-labelledby="h-encre-t"><title id="h-encre-t">Kerf, home</title><defs><pattern id="h-encre" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect x="0" y="0" width="3" height="6" fill="currentColor"/></pattern></defs><rect x="8" y="18" width="44" height="17" fill="currentColor"/><rect x="8" y="35" width="44" height="17" fill="url(#h-encre)"/><rect x="8" y="52" width="44" height="17" fill="currentColor"/><rect x="8" y="69" width="44" height="17" fill="url(#h-encre)"/><rect x="8" y="86" width="44" height="17" fill="currentColor"/><rect x="8" y="103" width="44" height="17" fill="url(#h-encre)"/><rect x="58" y="8" width="44" height="17" fill="currentColor"/><rect x="58" y="25" width="44" height="17" fill="url(#h-encre)"/><rect x="58" y="42" width="44" height="17" fill="currentColor"/><rect x="58" y="59" width="44" height="17" fill="url(#h-encre)"/><rect x="58" y="76" width="44" height="17" fill="currentColor"/><rect x="58" y="93" width="44" height="17" fill="url(#h-encre)"/><rect x="52" y="8" width="6" height="112" fill="#c8923a"/><text x="132" y="86" font-family="Archivo, Helvetica Neue, Arial, sans-serif" font-weight="800" font-size="84" letter-spacing="-0.02em" fill="currentColor">KERF</text></svg></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><span></span><span></span><span></span></button>
     <nav aria-label="Main navigation">
-    <ul class="site-nav">
+    <ul class="site-nav" id="site-nav">
       <li><a href="../index.html" aria-current="page">Home</a></li>
       <li><a href="../method.html">Method</a></li>
       <li><a href="../applications.html">Applications</a></li>
@@ -47,11 +48,20 @@
 <main id="main">
 
 <section class="hero">
-  <div class="wrap">
+  <div class="wrap hero-grid">
+    <div>
     <span class="label">Residual stress · composites</span>
     <h1>Measuring residual stress through the thickness of composites.</h1>
     <p class="lede">A stress map over a whole cross-section of a part, ply by ply, obtained with the contour method. Enough to decide on a cure cycle, a repair or a model calibration from measured values rather than assumed ones.</p>
     <p><a href="method.html">See the method</a></p>
+  </div>
+  <div class="hero-art" aria-hidden="true">
+<svg viewBox="0 0 110 128"><defs><pattern id="h-art" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect x="0" y="0" width="3" height="6" fill="currentColor"/></pattern></defs>
+<g class="half-l"><rect x="8" y="18" width="44" height="17" fill="currentColor"/><rect x="8" y="35" width="44" height="17" fill="url(#h-art)"/><rect x="8" y="52" width="44" height="17" fill="currentColor"/><rect x="8" y="69" width="44" height="17" fill="url(#h-art)"/><rect x="8" y="86" width="44" height="17" fill="currentColor"/><rect x="8" y="103" width="44" height="17" fill="url(#h-art)"/></g>
+<g class="half-r"><rect x="58" y="8" width="44" height="17" fill="currentColor"/><rect x="58" y="25" width="44" height="17" fill="url(#h-art)"/><rect x="58" y="42" width="44" height="17" fill="currentColor"/><rect x="58" y="59" width="44" height="17" fill="url(#h-art)"/><rect x="58" y="76" width="44" height="17" fill="currentColor"/><rect x="58" y="93" width="44" height="17" fill="url(#h-art)"/></g>
+<rect class="kerf" x="52" y="8" width="6" height="112" fill="#c8923a"/>
+</svg>
+  </div>
   </div>
 </section>
 
@@ -62,17 +72,17 @@
       <h2 id="change-title">One measurement, three decisions.</h2>
     </div>
     <div class="grid grid-3">
-      <article class="block block-accent">
+      <article class="block block-accent reveal">
         <span class="label">Process</span>
         <h3>Validate a process</h3>
         <p>Two cure cycles, two stacking sequences, two tools: the stress map shows what each choice leaves inside the part. You decide on a measurement, not on a distortion noticed afterwards.</p>
       </article>
-      <article class="block block-accent">
+      <article class="block block-accent reveal">
         <span class="label">Diagnosis</span>
         <h3>Explain a distortion</h3>
         <p>A part that warps at demoulding or after machining carries the trace of its thermal history. The stress distribution through the thickness says where and why, and what a process change can alter.</p>
       </article>
-      <article class="block block-accent">
+      <article class="block block-accent reveal">
         <span class="label">Simulation</span>
         <h3>Calibrate a digital twin</h3>
         <p>Thermo-elastic models often underestimate stress peaks in laminates. A map measured on the real cross-section gives the calculation a reference to reach and locates the gap to correct.</p>
@@ -97,17 +107,17 @@
       <h2 id="facts-title">Three sourced facts.</h2>
     </div>
     <div class="facts">
-      <div class="fact">
+      <div class="fact reveal">
         <span class="value">Twenty years</span>
         <p>A method established for twenty years, cross-checked against independent neutron measurements in interlaboratory comparisons.</p>
         <span class="caption">Contour method</span>
       </div>
-      <div class="fact">
+      <div class="fact reveal">
         <span class="value">0.35 to 0.5 mm</span>
         <p>Spatial resolution obtained through the thickness of a laminate.</p>
         <span class="caption">Karebasannanavar Ramachandrappa, PhD thesis, The Open University, 2024</span>
       </div>
-      <div class="fact">
+      <div class="fact reveal">
         <span class="value">24 to 36 %</span>
         <p>Difference on stress peaks depending on whether nominal or measured ply thicknesses are used in the calculation.</p>
         <span class="caption">Ahmad et al., Composite Structures 383 (2026) 120147</span>
@@ -131,7 +141,7 @@
 <footer class="site-footer dark">
   <div class="wrap">
     <div>
-      <a class="brand" href="../index.html"><svg viewBox="0 0 360 128" role="img" aria-labelledby="h-papier-t"><title id="h-papier-t">Kerf, home</title><defs><pattern id="h-papier" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect x="0" y="0" width="3" height="6" fill="#f4f1ec"/></pattern></defs><rect x="8" y="18" width="44" height="17" fill="#f4f1ec"/><rect x="8" y="35" width="44" height="17" fill="url(#h-papier)"/><rect x="8" y="52" width="44" height="17" fill="#f4f1ec"/><rect x="8" y="69" width="44" height="17" fill="url(#h-papier)"/><rect x="8" y="86" width="44" height="17" fill="#f4f1ec"/><rect x="8" y="103" width="44" height="17" fill="url(#h-papier)"/><rect x="58" y="8" width="44" height="17" fill="#f4f1ec"/><rect x="58" y="25" width="44" height="17" fill="url(#h-papier)"/><rect x="58" y="42" width="44" height="17" fill="#f4f1ec"/><rect x="58" y="59" width="44" height="17" fill="url(#h-papier)"/><rect x="58" y="76" width="44" height="17" fill="#f4f1ec"/><rect x="58" y="93" width="44" height="17" fill="url(#h-papier)"/><rect x="52" y="8" width="6" height="112" fill="#c8923a"/><text x="132" y="86" font-family="Archivo, Helvetica Neue, Arial, sans-serif" font-weight="800" font-size="84" letter-spacing="-0.02em" fill="#f4f1ec">KERF</text></svg></a>
+      <a class="brand" href="../index.html"><svg viewBox="0 0 360 128" role="img" aria-labelledby="h-papier-t"><title id="h-papier-t">Kerf, home</title><defs><pattern id="h-papier" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect x="0" y="0" width="3" height="6" fill="currentColor"/></pattern></defs><rect x="8" y="18" width="44" height="17" fill="currentColor"/><rect x="8" y="35" width="44" height="17" fill="url(#h-papier)"/><rect x="8" y="52" width="44" height="17" fill="currentColor"/><rect x="8" y="69" width="44" height="17" fill="url(#h-papier)"/><rect x="8" y="86" width="44" height="17" fill="currentColor"/><rect x="8" y="103" width="44" height="17" fill="url(#h-papier)"/><rect x="58" y="8" width="44" height="17" fill="currentColor"/><rect x="58" y="25" width="44" height="17" fill="url(#h-papier)"/><rect x="58" y="42" width="44" height="17" fill="currentColor"/><rect x="58" y="59" width="44" height="17" fill="url(#h-papier)"/><rect x="58" y="76" width="44" height="17" fill="currentColor"/><rect x="58" y="93" width="44" height="17" fill="url(#h-papier)"/><rect x="52" y="8" width="6" height="112" fill="#c8923a"/><text x="132" y="86" font-family="Archivo, Helvetica Neue, Arial, sans-serif" font-weight="800" font-size="84" letter-spacing="-0.02em" fill="currentColor">KERF</text></svg></a>
       <span class="signature">residual stress · composites</span>
     </div>
     <nav aria-label="Footer">
@@ -143,7 +153,7 @@
       <li><a href="../contact.html">Contact</a></li>
       </ul>
     </nav>
-    <ul class="legal" style="list-style:none;margin:0;padding:0;display:grid;gap:8px;">
+    <ul class="legal">
         <li><a href="../legal-notice.html">Legal notice</a></li>
         <li><a href="../privacy.html">Privacy</a></li>
     </ul>
@@ -153,5 +163,6 @@
     </div>
   </div>
 </footer>
+<script src="../assets/js/main.js" defer></script>
 </body>
 </html>
