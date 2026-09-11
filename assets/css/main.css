@@ -280,6 +280,77 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .site-footer .legal a:hover { color: var(--k-papier); }
 .site-footer .colophon { grid-column: 1 / -1; border-top: 1px solid #4a4540; padding-top: 24px; font-family: var(--k-font-mono); font-size: 12px; color: var(--k-sable); display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
 
+/* ---------- Film ---------- */
+/* Le SVG statique reste l'affiche de secours sans JavaScript ; avec JavaScript,
+   c'est le canvas qui s'affiche. Un seul accent laiton dans ce bloc : le fil,
+   dans le canvas. La barre de progression reste en couleur de texte. */
+.movie { margin: 0; scroll-margin-top: 88px; }   /* l'en-tete collant ne recouvre plus le film */
+.js .movie-poster { display: none; }
+.no-js .movie-stage,
+.no-js .movie-caption,
+.no-js .movie-controls,
+.no-js .movie-transcript { display: none; }
+.movie-terms { display: none; }
+.js .poster-only { display: none; }
+.no-js .movie-only { display: none; }
+/* La scene et l'affiche de secours ont exactement la meme hauteur : la bascule
+   sans JavaScript vers avec JavaScript ne decale plus la page. */
+.movie-stage { border: 1px solid var(--line); background: var(--bg); aspect-ratio: 16 / 9; }
+.movie-stage canvas { display: block; width: 100%; height: 100%; }
+.movie-poster { aspect-ratio: 16 / 9; display: grid; align-content: center; }
+.movie-caption {
+  display: flex; gap: 12px; align-items: baseline;
+  margin: 14px 0 0; max-width: var(--k-measure);
+  font-size: 14px; line-height: 1.5; color: var(--fg-soft);
+  min-height: 9em;   /* hauteur de la plus longue légende : aucun saut au changement de scène */
+}
+.movie-num { flex: 0 0 auto; font-family: var(--k-font-mono); font-size: 14px; color: var(--fg); }
+.movie-controls { display: flex; align-items: center; gap: 16px; margin-top: 16px; flex-wrap: wrap; }
+.movie-btn {
+  font-family: var(--k-font-mono); font-size: 12px; font-weight: 500;
+  letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--fg); background: transparent;
+  border: 1px solid var(--line-strong); border-radius: 0;
+  padding: 10px 14px; cursor: pointer; min-width: 104px;
+  transition: background-color .2s, color .2s, border-color .2s;
+}
+.movie-btn:hover { background: var(--fg); color: var(--bg); }
+.movie-bar { display: flex; gap: 4px; flex: 1 1 200px; min-width: 160px; }
+.movie-seg { position: relative; flex: 1 1 0; height: 24px; padding: 0; border: 0; background: transparent; cursor: pointer; }
+.movie-seg::before { content: ""; position: absolute; left: 0; right: 0; top: 11px; height: 3px; background: var(--line); }
+.movie-seg:hover::before { background: var(--line-strong); }
+.movie-fill { position: absolute; left: 0; top: 11px; height: 3px; width: 0; background: var(--fg-soft); }
+.movie-transcript { margin-top: 24px; border-top: 1px solid var(--line); padding-top: 14px; }
+.movie-transcript summary {
+  font-family: var(--k-font-mono); font-size: 12px; font-weight: 500;
+  letter-spacing: 0.16em; text-transform: uppercase; color: var(--fg-soft); cursor: pointer;
+}
+.movie-transcript summary:hover { color: var(--fg); }
+.movie-captions { margin: 16px 0 0; padding-left: 0; list-style: none; counter-reset: mcap; }
+.movie-captions li {
+  position: relative; padding-left: 40px; margin-bottom: 12px;
+  font-size: 14px; max-width: var(--k-measure); color: var(--fg-soft);
+}
+.movie-captions li::before {
+  counter-increment: mcap; content: "0" counter(mcap);
+  position: absolute; left: 0; font-family: var(--k-font-mono); color: var(--fg-soft);
+}
+.movie > figcaption { margin-top: 14px; max-width: var(--k-measure); }
+@media (max-width: 640px) {
+  .movie-controls { gap: 12px; }
+  .movie-bar { flex: 1 1 100%; }
+  .movie-caption { min-height: 11em; }
+}
+/* Sous 480 px, la scene passe en 4:3 : la hauteur gagnee garde lisibles le
+   panneau de profil, les reperes de pli et les valeurs de la carte. */
+@media (max-width: 480px) {
+  .movie-stage, .movie-poster { aspect-ratio: 4 / 3; }
+  .movie-caption { min-height: 15em; }
+}
+@media (max-width: 380px) {
+  .movie-caption { min-height: 18em; }
+}
+
 /* ---------- Réactivité ---------- */
 @media (max-width: 900px) {
   .grid-3 { grid-template-columns: 1fr; }

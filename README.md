@@ -18,6 +18,7 @@ merci.html                 Page après envoi        en/thank-you.html
 404.html                   Page introuvable (liens absolus, servie par l'hébergeur)
 assets/css/main.css        Feuille de style unique, jetons de la charte en tête
 assets/js/main.js          Menu mobile, mode sombre au défilement, apparitions, ouverture du kerf (héros)
+assets/js/contourmovie.js  Film Canvas 2D de la méthode du contour sur stratifié croisé (page Méthode)
 assets/fonts/              Archivo (500 à 800) et JetBrains Mono (400 à 500), woff2 variables, licence OFL
 assets/img/                Logos SVG, favicon SVG + PNG 32, apple-touch-icon 180, og.png 1200×630
 sitemap.xml, robots.txt
@@ -39,6 +40,15 @@ Compléments à la charte v1, ajoutés en jetons dans `main.css` :
 - **Mode sombre au défilement** : dès que le héros sort de l'écran, `body` reçoit la classe `is-dark` et les jetons de surface (`--bg`, `--fg`, `--fg-soft`, `--line`) basculent. Tout composant doit utiliser ces jetons de surface, pas les couleurs brutes, pour suivre la bascule. Sans JavaScript, le site reste en mode clair.
 - Menu mobile : bouton trois traits sous 900 px, panneau sous l'en-tête collant, fermeture par Échap ou clic à l'extérieur. Sans JavaScript, la navigation s'affiche en ligne.
 - Animations : apparition des blocs (`.reveal`) et ouverture du kerf dans le héros de l'accueil ; toutes désactivées avec `prefers-reduced-motion`.
+
+## Film de la page Méthode
+
+`assets/js/contourmovie.js` anime la méthode en sept scènes (pièce, préparation, découpe, relâchement, mesure, calcul, carte), sur un stratifié croisé [0°₄/90°₄/0°₄/90°₄/0°₄] de 20 plis. Les formes, signes et valeurs viennent d'Ahmad et al., Composite Structures 383 (2026) 120147 et de la thèse de Karebasannanavar Ramachandrappa (The Open University, 2024) : profil de coupe en créneaux pli par pli (les plis 90° comprimés ressortent, les plis 0° tendus rentrent), déformation exagérée ×100 avec la mention à l'écran, carte σyy de −130 à +50 MPa avec bandes d'artefact. Le cahier des charges scientifique et les deux relectures sont dans `docs/film/`.
+
+- Les légendes des sept scènes et les termes dessinés dans le canvas sont dans le HTML de chaque page (`figure.movie`, `<details>` de transcription et `ul.movie-terms`) : le script les lit, la page EN n'a rien de particulier.
+- Sans JavaScript, l'affiche SVG statique s'affiche à la place du canvas. Avec « réduire les animations », le film ne démarre pas seul et montre la carte finale.
+- Pour figer une image : `methode.html?t=27` (secondes) ; API `window.KerfContourMovie` (`seek`, `play`, `pause`, `duration`).
+- Les chiffres affichés dans le film sont sourcés un à un dans la relecture scientifique ; le script d'audit exclut le bloc film du contrôle des chiffres pour cette raison.
 
 ## Prévisualiser
 

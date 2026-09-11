@@ -24,6 +24,7 @@
 <link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="stylesheet" href="assets/css/main.css">
+<script>document.documentElement.className = document.documentElement.className.replace("no-js", "js");</script>
 </head>
 <body>
 <a class="skip-link" href="#main">Aller au contenu</a>
@@ -61,22 +62,97 @@
       <span class="label">Principe</span>
       <h2 id="steps-title">Quatre étapes.</h2>
     </div>
-    <figure class="schema figure">
-<svg viewBox="0 0 800 220" role="img" aria-label="Principe : la pièce coupée en deux se relâche ; la forme des surfaces de coupe est l'empreinte des contraintes.">
+    <figure class="movie" id="film-contour">
+      <div class="movie-poster schema">
+      <svg viewBox="0 0 800 220" role="img" aria-label="Principe : la pièce coupée en deux se relâche ; les surfaces de coupe prennent un profil en marches, une marche par changement d'orientation de pli.">
   <rect x="40" y="64" width="260" height="108" fill="none" stroke="currentColor" stroke-width="2"/>
-  <line x1="40" y1="76" x2="300" y2="76" stroke="#8a8580" stroke-width="1"/><line x1="40" y1="88" x2="300" y2="88" stroke="#8a8580" stroke-width="1"/><line x1="40" y1="100" x2="300" y2="100" stroke="#8a8580" stroke-width="1"/><line x1="40" y1="112" x2="300" y2="112" stroke="#8a8580" stroke-width="1"/><line x1="40" y1="124" x2="300" y2="124" stroke="#8a8580" stroke-width="1"/><line x1="40" y1="136" x2="300" y2="136" stroke="#8a8580" stroke-width="1"/><line x1="40" y1="148" x2="300" y2="148" stroke="#8a8580" stroke-width="1"/>
+  <line x1="40" y1="87" x2="300" y2="87" stroke="#8a8580" stroke-width="1"/><line x1="40" y1="106" x2="300" y2="106" stroke="#8a8580" stroke-width="1"/><line x1="40" y1="130" x2="300" y2="130" stroke="#8a8580" stroke-width="1"/><line x1="40" y1="149" x2="300" y2="149" stroke="#8a8580" stroke-width="1"/>
   <line x1="170" y1="52" x2="170" y2="184" stroke="#c8923a" stroke-width="4"/>
   <text x="40" y="40" font-family="JetBrains Mono, Menlo, Consolas, monospace" font-size="12" letter-spacing="1.9" fill="currentColor" opacity=".7">PIÈCE ENTIÈRE</text>
   <text x="178" y="206" font-family="JetBrains Mono, Menlo, Consolas, monospace" font-size="12" fill="currentColor">kerf</text>
-  <path d="M400 64 H548 Q538 118 548 172 H400 Z" fill="none" stroke="currentColor" stroke-width="2"/>
-  <line x1="400" y1="76" x2="538" y2="76" stroke="#8a8580" stroke-width="1"/><line x1="400" y1="88" x2="543" y2="88" stroke="#8a8580" stroke-width="1"/><line x1="400" y1="100" x2="546" y2="100" stroke="#8a8580" stroke-width="1"/><line x1="400" y1="112" x2="548" y2="112" stroke="#8a8580" stroke-width="1"/><line x1="400" y1="124" x2="548" y2="124" stroke="#8a8580" stroke-width="1"/><line x1="400" y1="136" x2="546" y2="136" stroke="#8a8580" stroke-width="1"/><line x1="400" y1="148" x2="543" y2="148" stroke="#8a8580" stroke-width="1"/>
-  <path d="M760 64 H612 Q622 118 612 172 H760 Z" fill="none" stroke="currentColor" stroke-width="2"/>
-  <line x1="622" y1="76" x2="760" y2="76" stroke="#8a8580" stroke-width="1"/><line x1="617" y1="88" x2="760" y2="88" stroke="#8a8580" stroke-width="1"/><line x1="614" y1="100" x2="760" y2="100" stroke="#8a8580" stroke-width="1"/><line x1="612" y1="112" x2="760" y2="112" stroke="#8a8580" stroke-width="1"/><line x1="612" y1="124" x2="760" y2="124" stroke="#8a8580" stroke-width="1"/><line x1="614" y1="136" x2="760" y2="136" stroke="#8a8580" stroke-width="1"/><line x1="617" y1="148" x2="760" y2="148" stroke="#8a8580" stroke-width="1"/>
+  <path d="M400 64 H539 L547 87 L553 87 L553 106 L546 106 L547 130 L553 130 L554 149 L548 149 L539 172 H400 Z" fill="none" stroke="currentColor" stroke-width="2"/>
+  <line x1="400" y1="87" x2="553" y2="87" stroke="#8a8580" stroke-width="1"/><line x1="400" y1="106" x2="546" y2="106" stroke="#8a8580" stroke-width="1"/><line x1="400" y1="130" x2="553" y2="130" stroke="#8a8580" stroke-width="1"/><line x1="400" y1="149" x2="548" y2="149" stroke="#8a8580" stroke-width="1"/>
+  <path d="M760 64 H621 L613 87 L607 87 L607 106 L614 106 L613 130 L607 130 L606 149 L612 149 L621 172 H760 Z" fill="none" stroke="currentColor" stroke-width="2"/>
+  <line x1="607" y1="87" x2="760" y2="87" stroke="#8a8580" stroke-width="1"/><line x1="614" y1="106" x2="760" y2="106" stroke="#8a8580" stroke-width="1"/><line x1="607" y1="130" x2="760" y2="130" stroke="#8a8580" stroke-width="1"/><line x1="612" y1="149" x2="760" y2="149" stroke="#8a8580" stroke-width="1"/>
   <text x="400" y="40" font-family="JetBrains Mono, Menlo, Consolas, monospace" font-size="12" letter-spacing="1.9" fill="currentColor" opacity=".7">DEUX MOITIÉS RELÂCHÉES</text>
   <text x="400" y="206" font-family="JetBrains Mono, Menlo, Consolas, monospace" font-size="12" fill="currentColor">surface de coupe mesurée</text>
 </svg>
-<figcaption class="caption">Principe : la pièce coupée en deux se relâche ; la forme des surfaces de coupe est l'empreinte des contraintes.</figcaption>
-</figure>
+      </div>
+      <div class="movie-stage">
+        <canvas data-contourmovie width="1280" height="720" role="img" aria-label="Film : la méthode du contour appliquée à un stratifié croisé carbone/époxy de 20 plis. Sept étapes : la pièce et son empilement, le bridage et les feuillards sacrificiels, la découpe au fil, le relâchement des deux faces de coupe, la mesure et la moyenne des deux profils, le calcul par éléments finis avec le déplacement inversé, puis la carte de contrainte σyy. La transcription des sept légendes est donnée sous le film."></canvas>
+      </div>
+      <p class="movie-caption"><span class="movie-num">01</span><span class="movie-text">Stratifié croisé carbone/époxy : 20 plis, cinq couches mesurées de 1,2 / 1,0 / 1,2 / 1,0 / 1,2 mm, 5,6 mm au total. Le plan de coupe a pour normale Y : c'est la contrainte σyy qui sera relâchée.</span></p>
+      <div class="movie-controls">
+        <button type="button" class="movie-btn movie-play" aria-pressed="true" data-label-play="Lecture" data-label-pause="Pause">Pause</button>
+        <button type="button" class="movie-btn movie-replay">Rejouer</button>
+        <div class="movie-bar" role="group" aria-label="Aller à une scène">
+          <button type="button" class="movie-seg" data-scene="0" aria-label="Scène 1 : la pièce"><span class="movie-fill"></span></button>
+          <button type="button" class="movie-seg" data-scene="1" aria-label="Scène 2 : la préparation"><span class="movie-fill"></span></button>
+          <button type="button" class="movie-seg" data-scene="2" aria-label="Scène 3 : la découpe"><span class="movie-fill"></span></button>
+          <button type="button" class="movie-seg" data-scene="3" aria-label="Scène 4 : le relâchement"><span class="movie-fill"></span></button>
+          <button type="button" class="movie-seg" data-scene="4" aria-label="Scène 5 : la mesure"><span class="movie-fill"></span></button>
+          <button type="button" class="movie-seg" data-scene="5" aria-label="Scène 6 : le calcul"><span class="movie-fill"></span></button>
+          <button type="button" class="movie-seg" data-scene="6" aria-label="Scène 7 : la carte"><span class="movie-fill"></span></button>
+        </div>
+      </div>
+      <details class="movie-transcript">
+        <summary>Transcription des sept légendes</summary>
+        <ol class="movie-captions">
+          <li>Stratifié croisé carbone/époxy : 20 plis, cinq couches mesurées de 1,2 / 1,0 / 1,2 / 1,0 / 1,2 mm, 5,6 mm au total. Le plan de coupe a pour normale Y : c'est la contrainte σ<sub>yy</sub> qui sera relâchée.</li>
+          <li>Bridage symétrique de part et d'autre du trajet. Deux feuillards sacrificiels minces sont plaqués sur la face supérieure et sur la face inférieure de la pièce : le composite carbone conduit trop mal l'électricité pour que la coupe s'amorce seule, et ces feuillards permettent à la machine de produire les étincelles et de démarrer la coupe.</li>
+          <li>Électro-érosion à fil de laiton Ø 0,25 mm, une seule passe droite, à 0,18 mm/min. Pas de reprise : une seconde passe enlèverait la couche relâchée. Les deux moitiés restent bridées pendant toute la coupe.</li>
+          <li>La coupe terminée, bridage et feuillards sont retirés : les deux moitiés, relâchées au fur et à mesure de la coupe, se séparent. Les plis 90°, comprimés le long des fibres, ressortent ; les plis 0°, tendus en travers des fibres, rentrent. Marches franches aux interfaces, rampe vers les deux faces libres.</li>
+          <li>Les deux faces sont relevées au pas de 0,1 mm, recalées sur une grille commune, puis moyennées point par point. Le profil moyen est ensuite ajusté couche par couche, une droite par couche : une seule spline sur toute l'épaisseur lisserait la marche d'interface. La moyenne annule les écarts antisymétriques (trajectoire du fil, cisaillement) ; elle ne corrige pas les écarts symétriques.</li>
+          <li>Maillage pli par pli, plus fin dans l'épaisseur, qui suit chaque interface. Le profil moyen est imposé avec le signe inversé sur la demi-pièce, en élasticité linéaire, avec les propriétés orthotropes de chaque pli : E<sub>11</sub> = 119,3 GPa dans l'axe des fibres, E<sub>22</sub> = 8,2 GPa en travers. Le pli qui se déplace le plus n'est donc pas celui qui porte le plus de contrainte.</li>
+          <li>σ<sub>yy</sub> restituée sur la face de coupe : −130 MPa aux deux interfaces avec les couches 0° externes, +40 MPa au cœur de la couche 0° centrale, fort gradient dans les couches 90°. Dans les couches 0° (fibres dans le plan de coupe) σ<sub>yy</sub> est la contrainte transverse aux fibres ; dans les couches 90° (fibres normales au plan de coupe) elle est la contrainte le long des fibres. Les zones hachurées ne sont pas exploitables.</li>
+        </ol>
+      </details>
+      <ul class="movie-terms" hidden>
+        <li data-k="dec">,</li>
+        <li data-k="stack">[0°₄ / 90°₄ / 0°₄ / 90°₄ / 0°₄]</li>
+        <li data-k="plies">20 plis, 4 par couche</li>
+        <li data-k="total">5,6 mm</li>
+        <li data-k="fx">0°  fibres selon X</li>
+        <li data-k="fy">90°  fibres selon Y</li>
+        <li data-k="cut">plan de coupe, normale Y</li>
+        <li data-k="rel">σyy relâchée</li>
+        <li data-k="sig">σyy (MPa)</li>
+        <li data-k="shiml">feuillards sacrificiels</li>
+        <li data-k="clampl">bridage symétrique</li>
+        <li data-k="wirel">fil laiton Ø 0,25 mm</li>
+        <li data-k="speed">0,18 mm/min, une seule passe</li>
+        <li data-k="kerfl">sillon</li>
+        <li data-k="comp">90° comprimés : la matière ressort</li>
+        <li data-k="tens">0° tendus : la matière rentre</li>
+        <li data-k="step">relevé point par point</li>
+        <li data-k="faceA">face A</li>
+        <li data-k="faceB">face B</li>
+        <li data-k="mean">moyenne</li>
+        <li data-k="prof">profil w(z)</li>
+        <li data-k="um">µm</li>
+        <li data-k="exag">déformation × 100</li>
+        <li data-k="amp">amplitude réelle 7,3 µm crête à crête</li>
+        <li data-k="meshl">maillage pli par pli</li>
+        <li data-k="props">E11 119,3 GPa · E22 8,2 GPa</li>
+        <li data-k="measured">déplacement mesuré</li>
+        <li data-k="invl">déplacement inversé, imposé</li>
+        <li data-k="flatl">la surface revient à plat</li>
+        <li data-k="note0">0° : σyy transverse aux fibres</li>
+        <li data-k="note90">90° : σyy le long des fibres</li>
+        <li data-k="clt">théorie classique des stratifiés : +29 / −52 MPa</li>
+        <li data-k="minc">−130 MPa</li>
+        <li data-k="maxt">+40 MPa</li>
+        <li data-k="artef">zones hachurées : non exploitables</li>
+        <li data-k="ampShort">réel 7,3 µm</li>
+        <li data-k="burst">vue éclatée</li>
+        <li data-k="sketch">(écart schématique)</li>
+        <li data-k="disp">deux coupes de la même plaque : −70 et −130 MPa</li>
+        <li data-k="detail">détail : 32 mm du trajet de coupe (plaque 100 × 100 mm)</li>
+        <li data-k="meas">mesure</li>
+        <li data-k="cltShort">théorie classique</li>
+      </ul>
+      <figcaption class="caption"><span class="movie-only">Film : sept étapes, 45 secondes, en boucle. Déformation des faces de coupe exagérée 100 fois. Formes, signes et valeurs d'après <a href="#ref-1">[1]</a> et <a href="#ref-3">[3]</a>.</span><span class="poster-only">Principe : la pièce coupée en deux se relâche ; la forme des surfaces de coupe est l'empreinte des contraintes.</span></figcaption>
+    </figure>
     <ol class="steps" style="margin-top:40px;">
       <li class="reveal">
         <div>
@@ -240,5 +316,6 @@
   </div>
 </footer>
 <script src="assets/js/main.js" defer></script>
+<script src="assets/js/contourmovie.js" defer></script>
 </body>
 </html>

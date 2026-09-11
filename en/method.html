@@ -24,6 +24,7 @@
 <link rel="icon" href="../assets/img/favicon-32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
 <link rel="stylesheet" href="../assets/css/main.css">
+<script>document.documentElement.className = document.documentElement.className.replace("no-js", "js");</script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -61,22 +62,97 @@
       <span class="label">Principle</span>
       <h2 id="steps-title">Four steps.</h2>
     </div>
-    <figure class="schema figure">
-<svg viewBox="0 0 800 220" role="img" aria-label="Principle: the part cut in two relaxes; the shape of the cut surfaces is the imprint of the stresses.">
+    <figure class="movie" id="film-contour">
+      <div class="movie-poster schema">
+      <svg viewBox="0 0 800 220" role="img" aria-label="Principle: the part cut in two relaxes; the cut surfaces take a stepped profile, one step per change of ply orientation.">
   <rect x="40" y="64" width="260" height="108" fill="none" stroke="currentColor" stroke-width="2"/>
-  <line x1="40" y1="76" x2="300" y2="76" stroke="#8a8580" stroke-width="1"/><line x1="40" y1="88" x2="300" y2="88" stroke="#8a8580" stroke-width="1"/><line x1="40" y1="100" x2="300" y2="100" stroke="#8a8580" stroke-width="1"/><line x1="40" y1="112" x2="300" y2="112" stroke="#8a8580" stroke-width="1"/><line x1="40" y1="124" x2="300" y2="124" stroke="#8a8580" stroke-width="1"/><line x1="40" y1="136" x2="300" y2="136" stroke="#8a8580" stroke-width="1"/><line x1="40" y1="148" x2="300" y2="148" stroke="#8a8580" stroke-width="1"/>
+  <line x1="40" y1="87" x2="300" y2="87" stroke="#8a8580" stroke-width="1"/><line x1="40" y1="106" x2="300" y2="106" stroke="#8a8580" stroke-width="1"/><line x1="40" y1="130" x2="300" y2="130" stroke="#8a8580" stroke-width="1"/><line x1="40" y1="149" x2="300" y2="149" stroke="#8a8580" stroke-width="1"/>
   <line x1="170" y1="52" x2="170" y2="184" stroke="#c8923a" stroke-width="4"/>
   <text x="40" y="40" font-family="JetBrains Mono, Menlo, Consolas, monospace" font-size="12" letter-spacing="1.9" fill="currentColor" opacity=".7">WHOLE PART</text>
   <text x="178" y="206" font-family="JetBrains Mono, Menlo, Consolas, monospace" font-size="12" fill="currentColor">kerf</text>
-  <path d="M400 64 H548 Q538 118 548 172 H400 Z" fill="none" stroke="currentColor" stroke-width="2"/>
-  <line x1="400" y1="76" x2="538" y2="76" stroke="#8a8580" stroke-width="1"/><line x1="400" y1="88" x2="543" y2="88" stroke="#8a8580" stroke-width="1"/><line x1="400" y1="100" x2="546" y2="100" stroke="#8a8580" stroke-width="1"/><line x1="400" y1="112" x2="548" y2="112" stroke="#8a8580" stroke-width="1"/><line x1="400" y1="124" x2="548" y2="124" stroke="#8a8580" stroke-width="1"/><line x1="400" y1="136" x2="546" y2="136" stroke="#8a8580" stroke-width="1"/><line x1="400" y1="148" x2="543" y2="148" stroke="#8a8580" stroke-width="1"/>
-  <path d="M760 64 H612 Q622 118 612 172 H760 Z" fill="none" stroke="currentColor" stroke-width="2"/>
-  <line x1="622" y1="76" x2="760" y2="76" stroke="#8a8580" stroke-width="1"/><line x1="617" y1="88" x2="760" y2="88" stroke="#8a8580" stroke-width="1"/><line x1="614" y1="100" x2="760" y2="100" stroke="#8a8580" stroke-width="1"/><line x1="612" y1="112" x2="760" y2="112" stroke="#8a8580" stroke-width="1"/><line x1="612" y1="124" x2="760" y2="124" stroke="#8a8580" stroke-width="1"/><line x1="614" y1="136" x2="760" y2="136" stroke="#8a8580" stroke-width="1"/><line x1="617" y1="148" x2="760" y2="148" stroke="#8a8580" stroke-width="1"/>
+  <path d="M400 64 H539 L547 87 L553 87 L553 106 L546 106 L547 130 L553 130 L554 149 L548 149 L539 172 H400 Z" fill="none" stroke="currentColor" stroke-width="2"/>
+  <line x1="400" y1="87" x2="553" y2="87" stroke="#8a8580" stroke-width="1"/><line x1="400" y1="106" x2="546" y2="106" stroke="#8a8580" stroke-width="1"/><line x1="400" y1="130" x2="553" y2="130" stroke="#8a8580" stroke-width="1"/><line x1="400" y1="149" x2="548" y2="149" stroke="#8a8580" stroke-width="1"/>
+  <path d="M760 64 H621 L613 87 L607 87 L607 106 L614 106 L613 130 L607 130 L606 149 L612 149 L621 172 H760 Z" fill="none" stroke="currentColor" stroke-width="2"/>
+  <line x1="607" y1="87" x2="760" y2="87" stroke="#8a8580" stroke-width="1"/><line x1="614" y1="106" x2="760" y2="106" stroke="#8a8580" stroke-width="1"/><line x1="607" y1="130" x2="760" y2="130" stroke="#8a8580" stroke-width="1"/><line x1="612" y1="149" x2="760" y2="149" stroke="#8a8580" stroke-width="1"/>
   <text x="400" y="40" font-family="JetBrains Mono, Menlo, Consolas, monospace" font-size="12" letter-spacing="1.9" fill="currentColor" opacity=".7">TWO RELAXED HALVES</text>
   <text x="400" y="206" font-family="JetBrains Mono, Menlo, Consolas, monospace" font-size="12" fill="currentColor">measured cut surface</text>
 </svg>
-<figcaption class="caption">Principle: the part cut in two relaxes; the shape of the cut surfaces is the imprint of the stresses.</figcaption>
-</figure>
+      </div>
+      <div class="movie-stage">
+        <canvas data-contourmovie width="1280" height="720" role="img" aria-label="Film: the contour method applied to a 20-ply cross-ply carbon/epoxy laminate. Seven steps: the part and its layup, clamping and sacrificial shims, the wire cut, the release of both cut surfaces, measurement and averaging of the two profiles, the finite element calculation with reversed displacement, then the σyy stress map. A transcript of the seven captions is given below the film."></canvas>
+      </div>
+      <p class="movie-caption"><span class="movie-num">01</span><span class="movie-text">Cross-ply carbon/epoxy laminate: 20 plies, five measured layers of 1.2 / 1.0 / 1.2 / 1.0 / 1.2 mm, 5.6 mm in total. The cut plane has normal Y, so the released stress is σyy.</span></p>
+      <div class="movie-controls">
+        <button type="button" class="movie-btn movie-play" aria-pressed="true" data-label-play="Play" data-label-pause="Pause">Pause</button>
+        <button type="button" class="movie-btn movie-replay">Replay</button>
+        <div class="movie-bar" role="group" aria-label="Go to a scene">
+          <button type="button" class="movie-seg" data-scene="0" aria-label="Scene 1: the part"><span class="movie-fill"></span></button>
+          <button type="button" class="movie-seg" data-scene="1" aria-label="Scene 2: preparation"><span class="movie-fill"></span></button>
+          <button type="button" class="movie-seg" data-scene="2" aria-label="Scene 3: the cut"><span class="movie-fill"></span></button>
+          <button type="button" class="movie-seg" data-scene="3" aria-label="Scene 4: release"><span class="movie-fill"></span></button>
+          <button type="button" class="movie-seg" data-scene="4" aria-label="Scene 5: measurement"><span class="movie-fill"></span></button>
+          <button type="button" class="movie-seg" data-scene="5" aria-label="Scene 6: calculation"><span class="movie-fill"></span></button>
+          <button type="button" class="movie-seg" data-scene="6" aria-label="Scene 7: the map"><span class="movie-fill"></span></button>
+        </div>
+      </div>
+      <details class="movie-transcript">
+        <summary>Transcript of the seven captions</summary>
+        <ol class="movie-captions">
+          <li>Cross-ply carbon/epoxy laminate: 20 plies, five measured layers of 1.2 / 1.0 / 1.2 / 1.0 / 1.2 mm, 5.6 mm in total. The cut plane has normal Y, so the released stress is σ<sub>yy</sub>.</li>
+          <li>Symmetric clamping on both sides of the cut path. Two thin sacrificial shims are placed against the top and bottom faces of the part: carbon composite conducts electricity too poorly for the cut to start on its own, and these shims let the machine generate the sparks and begin cutting.</li>
+          <li>Wire electrical discharge machining, brass wire Ø 0.25 mm, one straight pass at 0.18 mm/min. No second pass: it would remove the released layer. Both halves stay clamped throughout the cut.</li>
+          <li>With the cut complete, clamps and shims are removed: the two halves, relaxed as the cut progressed, come apart. The 90° plies, compressed along the fibres, stand proud; the 0° plies, in tension across the fibres, are drawn back. Sharp steps at the interfaces, a ramp towards the two free faces.</li>
+          <li>Both faces are measured on a 0.1 mm step, registered on a common grid, then averaged point by point. The averaged profile is then fitted layer by layer, one straight line per layer: a single spline across the thickness would smooth the interface step away. Averaging cancels antisymmetric deviations (wire path, shear); it does not correct symmetric ones.</li>
+          <li>Ply-by-ply mesh, finer through the thickness, following every interface. The averaged profile is applied with reversed sign to the half part, linear elastic, with the orthotropic properties of each ply: E<sub>11</sub> = 119.3 GPa along the fibres, E<sub>22</sub> = 8.2 GPa across them. So the ply that moves most is not the ply that carries most stress.</li>
+          <li>σ<sub>yy</sub> recovered on the cut surface: −130 MPa at both interfaces with the outer 0° layers, +40 MPa in the middle of the central 0° layer, a strong gradient through the 90° layers. In the 0° layers (fibres in the cut plane) σ<sub>yy</sub> is the stress transverse to the fibres; in the 90° layers (fibres normal to the cut plane) it is the stress along the fibres. The hatched zones are not usable.</li>
+        </ol>
+      </details>
+      <ul class="movie-terms" hidden>
+        <li data-k="dec">.</li>
+        <li data-k="stack">[0°₄ / 90°₄ / 0°₄ / 90°₄ / 0°₄]</li>
+        <li data-k="plies">20 plies, 4 per layer</li>
+        <li data-k="total">5.6 mm</li>
+        <li data-k="fx">0°  fibres along X</li>
+        <li data-k="fy">90°  fibres along Y</li>
+        <li data-k="cut">cut plane, normal Y</li>
+        <li data-k="rel">σyy released</li>
+        <li data-k="sig">σyy (MPa)</li>
+        <li data-k="shiml">sacrificial shims</li>
+        <li data-k="clampl">symmetric clamping</li>
+        <li data-k="wirel">brass wire Ø 0.25 mm</li>
+        <li data-k="speed">0.18 mm/min, one pass only</li>
+        <li data-k="kerfl">kerf</li>
+        <li data-k="comp">90° in compression: material stands proud</li>
+        <li data-k="tens">0° in tension: material is drawn back</li>
+        <li data-k="step">point by point</li>
+        <li data-k="faceA">face A</li>
+        <li data-k="faceB">face B</li>
+        <li data-k="mean">average</li>
+        <li data-k="prof">w(z) profile</li>
+        <li data-k="um">µm</li>
+        <li data-k="exag">deformation × 100</li>
+        <li data-k="amp">actual amplitude 7.3 µm peak to peak</li>
+        <li data-k="meshl">ply-by-ply mesh</li>
+        <li data-k="props">E11 119.3 GPa · E22 8.2 GPa</li>
+        <li data-k="measured">measured displacement</li>
+        <li data-k="invl">reversed displacement, applied</li>
+        <li data-k="flatl">the surface returns flat</li>
+        <li data-k="note0">0°: σyy transverse to the fibres</li>
+        <li data-k="note90">90°: σyy along the fibres</li>
+        <li data-k="clt">classical laminate theory: +29 / −52 MPa</li>
+        <li data-k="minc">−130 MPa</li>
+        <li data-k="maxt">+40 MPa</li>
+        <li data-k="artef">hatched zones: not usable</li>
+        <li data-k="ampShort">actual 7.3 µm</li>
+        <li data-k="burst">exploded view</li>
+        <li data-k="sketch">(schematic deviation)</li>
+        <li data-k="disp">two cuts on the same plate: −70 and −130 MPa</li>
+        <li data-k="detail">detail: 32 mm of the cut path (100 × 100 mm plate)</li>
+        <li data-k="meas">measured</li>
+        <li data-k="cltShort">classical theory</li>
+      </ul>
+      <figcaption class="caption"><span class="movie-only">Film: seven steps, 45 seconds, looping. Cut-surface deformation exaggerated 100 times. Shapes, signs and values after <a href="#ref-1">[1]</a> and <a href="#ref-3">[3]</a>.</span><span class="poster-only">Principle: the part cut in two relaxes; the shape of the cut surfaces is the imprint of the stresses.</span></figcaption>
+    </figure>
     <ol class="steps" style="margin-top:40px;">
       <li class="reveal">
         <div>
@@ -240,5 +316,6 @@
   </div>
 </footer>
 <script src="../assets/js/main.js" defer></script>
+<script src="../assets/js/contourmovie.js" defer></script>
 </body>
 </html>
